@@ -5,6 +5,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
+    mode: "development",
     entry: {
         app: './src/index.js',
         print: './src/print.js'
@@ -13,6 +14,7 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    devtool: 'inline-source-map',
     plugins: [
         new CleanWebpackPlugin(),
         new ManifestPlugin(),
