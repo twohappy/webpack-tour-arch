@@ -1,0 +1,25 @@
+{
+  "name": "webpack-tour",
+  "version": "1.0.0",
+  "description": "webpack practice",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^3.3.9",
+    "webpack": "^4.41.2"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twohappy/webpack-tour.git"
+  },
+  "author": "twohappy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twohappy/webpack-tour/issues"
+  },
+  "homepage": "https://github.com/twohappy/webpack-tour#readme"
+}
