@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
@@ -14,6 +15,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new ManifestPlugin(),
         new HtmlWebpackPlugin({
             title: 'Output Management',
         }),
