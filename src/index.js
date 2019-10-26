@@ -1,6 +1,7 @@
 import _ from 'lodash';
-import './style.css';
-import Fly from './fly.jpg';
+import './styles/style.css';
+import Fly from './assets/fly.jpg';
+import './assets/font-awesome-4.7.0/css/font-awesome.min.css';
 
 function component() {
     const element = document.createElement('div');
@@ -22,6 +23,14 @@ function component2() {
 
     return element;
 }
+function component3() {
+    const element = document.createElement('i');
+    element.classList.add('fa');
+    element.classList.add('fa-plus');
+
+    return element;
+}
 
 document.body.appendChild(component());
 document.body.appendChild(component2());
+document.body.appendChild(component3());

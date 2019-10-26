@@ -1,4 +1,5 @@
 const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: './src/index.js',
@@ -21,6 +22,13 @@ module.exports = {
                     'file-loader',
                 ],
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
         ],
     },
+    plugins: [new BundleAnalyzerPlugin()]
 };
