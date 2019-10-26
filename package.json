@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "webpack practice",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
   "devDependencies": {
     "webpack-cli": "^3.3.9",
     "webpack": "^4.41.2"
