@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './styles/style.css';
 import Fly from './assets/fly.jpg';
 import './assets/font-awesome-4.7.0/css/font-awesome.min.css';
+import Data from './data.xml';
 
 function component() {
     const element = document.createElement('div');
@@ -30,7 +31,7 @@ function component3() {
 
     return element;
 }
-
+console.log(Data);
 document.body.appendChild(component());
 document.body.appendChild(component2());
 document.body.appendChild(component3());
