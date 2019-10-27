@@ -8,7 +8,6 @@ module.exports = {
     mode: "development",
     entry: {
         app: './src/index.js',
-        print: './src/print.js'
     },
     output: {
         filename: '[name].bundle.js',
@@ -18,6 +17,7 @@ module.exports = {
     devtool: 'inline-source-map',
     devServer: {
         contentBase: './dist',
+        hot: true
     },
     plugins: [
         new CleanWebpackPlugin(),
